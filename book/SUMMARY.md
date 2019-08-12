@@ -10,3 +10,5 @@
 
 * SDK相关文档
 	* [微信接口列表](sdkdoc/微信接口列表.md)
+	* [小游戏素材需求](sdkdoc/小游戏素材需求.md)
+	* [游戏大厅接入文档(Android)](sdkdoc/游戏大厅接入文档\(Android\).md)
