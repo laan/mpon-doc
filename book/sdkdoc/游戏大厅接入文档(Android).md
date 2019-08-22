@@ -38,12 +38,12 @@
    ```
    以及项目依赖；
    ```
-       api(name: 'mpon', ext: 'aar')
+       api(name: 'mpon_game_sdk', ext: 'aar')
    ```
 *  初始化 
    在项目中的Application中的onCreate方法中初始化，代码如下
    ```
-   SdkConfig.init(Context)
+   MponSdk.getInstance().init(getApplicationContext(), MponParam.create().builder());
    ```
 *  接入游戏列表页面
    游戏列表页面对应的是一个GameFragment，开发者只需要将此GameFragment附在指定界面即可:
