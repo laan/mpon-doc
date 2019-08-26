@@ -1,12 +1,13 @@
 # Summary
 
 * [前言](README.md)
-* [环境说明](Chapter1/环境说明.md)
-* [栏目类型说明](Chapter1/栏目类型说明.md)
+* [环境说明](explain/环境说明.md)
+* [栏目类型说明](explain/栏目类型说明.md)
 * API
-	* [登录与api签名算法](Chapter1/登录与验证.md)
-	* [游戏相关api](Chapter1/游戏.md)
-	* [统计api](statistic/统计.md)
+	* [登录与api签名算法](api/登录与验证.md)
+	* [游戏相关api](api/游戏.md)
+	* [统计api](api/统计.md)
+	* [开发者api](api/开发者api.md)
 
 * SDK相关文档
 	* [微信接口列表](sdkdoc/微信接口列表.md)
