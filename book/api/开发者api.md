@@ -11,7 +11,7 @@
 #### 1.3请求参数
 | 参数 | 是否必填 | 类型|说明 |
 | ---- | -------- |---|----|
-|user_name|是|str|账号|
+|username|是|str|账号|
 |pwd|是|str|密码(md5一次)|
 
 #### 1.4返回结果
@@ -76,7 +76,7 @@
 #### 3.4返回结果
 ```json
 {
-    "data": [
+    "data": 
         {
             "game_list": [
                 {
@@ -98,7 +98,8 @@
                         "version_num": "1.00",
                         "version_info": "红颜养成记",
                         "version_file": "http://127.0.0.1:8000/media/version_file/4c2.zip",
-                        "version_file_md5": "07d31db12598d699f0095b119ba6639c"
+                        "version_file_md5": "07d31db12598d699f0095b119ba6639c",
+                        "check_status":1
                     },
                     "test_version": {
                         "version_id": 11,
@@ -113,30 +114,20 @@
                         "version_info": "红颜养成记",
                         "version_file": "http://127.0.0.1:8000/media/version_file/4c2.zip",
                         "version_file_md5": "07d31db12598d699f0095b119ba6639c"
-                    },
-                    "refuse_version": {
-                        "version_id": 11,
-                        "version_num": "1.00",
-                        "version_info": "红颜养成记",
-                        "version_file": "http://127.0.0.1:8000/media/version_file/4c2.zip",
-                        "version_file_md5": "07d31db12598d699f0095b119ba6639c"
-                    }
+                    }         
                 }
-            ],
-            "developer_id": 8,
-            "developer_name": "88888888@qq.com"
+            ]
         }
-    ],
+    ,
     "code": 200
 }
-
 ```
 #### 3.5字段说明
 | 返回值 | 类型 | 说明 |
 | ---- | -------- |---|
 |code|int|200:成功 非200:失败|
 |error_msg|str|返回失败错误信息|
-|data|list|返回成功的数据体|
+|data|obj|返回成功的数据体|
 |developer_id|int|开发者id|
 |developer_name|str|开发者name|
 |game_id|int|游戏id|
@@ -145,11 +136,11 @@
 |player_num|str|多少人玩过|
 |info|str|游戏说明|
 |portrait|int|1:横屏 2:竖屏|
-|online_version|str|上线版本|
-|check_version|str|审核版本|
-|refuse_version|str|拒绝版本|
-|test_version|str|测试版本|
-|roll_version|str|回滚版本|
+|online_version|obj|上线版本|
+|check_version|obj|审核版本|
+|test_version|obj|测试版本|
+|roll_version|obj|回滚版本|
+|check_status|int|1:审核中 2:审核通过 3:审核拒绝(只有审核版本才有)|
 |version_id|int|版本id|
 |version_num|str|版本号|
 |version_info|str|版本号说明|
