@@ -147,3 +147,50 @@
 |version_file|str|版本号文件url|
 |version_file_md5|str|版本文件md5值|
 
+### 4.0 获取随机游戏api
+#### 4.1 说明
+获取随机游戏
+#### 4.2请求方式
+|接口详情||
+|--|--|
+|地址|/developer/game_random/|
+|请求方式|get|
+#### 4.3请求参数
+| 参数 | 是否必填 | 类型|说明 |
+| ---- | -------- |---|----|
+|count|否|int|获取数量，默认10|
+|game_id|否|int|过滤某个游戏|
+
+#### 4.4返回结果
+```json
+      
+{
+    "code": 200,
+    "data": [
+        {
+            "game_id": "wx0effc279bd9fb9c0",
+            "game_name": "找茬神探",
+            "game_icon": "xx",
+            "player_num": "643万人玩过"
+        },
+        {
+            "game_id": 16,
+            "game_name": "测试专用",
+            "game_icon": "xx",
+            "player_num": "707万人玩过"
+        }
+    ]
+}
+
+
+```
+#### 4.5字段说明
+| 返回值 | 类型 | 说明 |
+| ---- | -------- |---|
+|code|int|200:成功 非200:失败|
+|error_msg|str|返回失败错误信息|
+|data|object|返回成功的数据体|
+|game_id|int|微信id没有就返回游戏id|
+|game_name|str|游戏名|
+|game_icon|str|游戏图标|
+|player_num|str|多少人玩过|
