@@ -9,6 +9,7 @@
   * [统计api](api/统计.md)
   * [开发者api](api/开发者api.md)
   * [广告投放api](api/广告投放.md)
+  * [模拟微信登录-获取code](api/模拟微信登录-获取code.md)
 
 * SDK相关文档
   * [微信接口列表](sdkdoc/微信接口列表.md)
