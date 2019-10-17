@@ -6,6 +6,8 @@
 * API
   * [登录与api签名算法](api/登录与验证.md)
   * [游戏相关api](api/游戏.md)
+  * [榜单api](api/榜单.md)
+  * [游戏分类api](api/游戏分类.md)
   * [统计api](api/统计.md)
   * [开发者api](api/开发者api.md)
   * [广告投放api](api/广告投放.md)
